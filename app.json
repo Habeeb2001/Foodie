@@ -24,10 +24,21 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.zeroup.Foodie"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "packageOpts":{
+      "config": "metro.config.js",
+      "sourceExts":[
+        "expo.ts",
+        "expo.js",
+        "expo.tsx",
+        "expo.jsx",
+        "ts","js", "jsx","json", "wasm", "svg"
+      ]
     }
   }
 }

@@ -1,20 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import FoodsScreen from './components/FoodsScreen/FoodsScreen';
+import { Dimensions } from 'react-native';
+import NavigationsContainer from './components/NavigationsContainer/NavigationsContainer';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <NavigationsContainer/>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    width: Dimensions.get("window").width,
+    height:Dimensions.get("window").height,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    fontFamily: "Arial",
   },
 });
